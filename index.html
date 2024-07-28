@@ -452,7 +452,7 @@ section.marinfo {
             document.body.addEventListener('copy', function (e) {
                 e.preventDefault();
             });
-            
+
             document.body.addEventListener('contextmenu', function (e) {
                 e.preventDefault();
             });
@@ -461,6 +461,17 @@ section.marinfo {
                 e.preventDefault();
             });
         });
+
+        // Daftarkan Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (error) {
+                    console.log('ServiceWorker registration failed: ', error);
+                });
+            });
+        }
     </script>
 </body>
 </html>
