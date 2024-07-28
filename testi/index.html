@@ -15,6 +15,7 @@
     <!-- Open Graph meta tags -->
     <meta property="og:title" content="PLIXSTORE">
     <meta property="og:description" content="Halo kami plixstore menyediakan berbagai macam kebutuhan server dan minecraft anda berbagai build skin resource packs dan sebagainya.">
+    <meta property="og:image" content="https://plixsmp.my.id/img/icona.png">
     <meta property="og:url" content="https://plixsmp.my.id">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="PLIXSTORE">
@@ -47,7 +48,7 @@
 
         .marketplace, .marinfo {
             text-align: center;
-            padding: 10px;
+            padding: 5px;
         }
 
         .marketplace h2, .marinfo h2 {
@@ -129,6 +130,25 @@
             font-size: 14px;
             margin-top: 10px;
         }
+        
+         a {
+          background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 35px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            display: inline-block;
+            text-decoration: none;
+          font-weight: bold;
+        }
+        
+        a:focus, a:hover {
+          color: white;
+          font-weight: bold;
+        }
 
         .button-bubble {
             background-color: #555;
@@ -153,25 +173,28 @@
         }
 
         .iteminfo {
-            background-color: #333;
-            margin: 10px auto;
-            padding: 20px;
-            border-radius: 10px;
-            width: 90%;
-            max-width: 600px;
-            box-sizing: border-box;
-            text-align: left;
-            box-shadow: 
-                5px 5px 10px rgba(0, 0, 0, 0.3),
-                -5px -5px 10px rgba(0, 0, 0, 0.2),
-                10px 10px 15px rgba(0, 0, 0, 0.1);
-        }
+    background-color: #333;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 700px;
+    box-sizing: border-box;
+    text-align: left;
+    box-shadow: 
+        5px 5px 10px rgba(0, 0, 0, 0.3),
+        -5px -5px 10px rgba(0, 0, 0, 0.2),
+        10px 10px 15px rgba(0, 0, 0, 0.1);
+}
         
         .infocontent img {
             width: 100%;
             height: auto;
             border-radius: 10px;
             margin-bottom: 15px;
+            border-bottom: 3px solid #fff8;
+            padding-bottom: 1px;
+}
         }
 
         .social-links {
@@ -216,6 +239,13 @@
             font-weight: bold;
             color: white;
         }
+        
+        .iteminfo tanggal {
+            color: gray;
+            display: inline-block;
+            font-size: 12px;
+            border-left: 5px dashed yellow;
+        }
 
         p, small {
             margin: 0px 0;
@@ -249,43 +279,8 @@
         }
         
         k {
-          color: #fff;
-          text-decoration: underline;
-        }
-        
-        .modal-content {
-            background-color: #333;
-            color: #ccc;
-            border: none;
-        }
-
-        .modal-header {
-            border-bottom: 1px solid #444;
-        }
-
-        .modal-footer {
-            border-top: 1px solid #444;
-        }
-
-        .form-control {
-            background-color: #444;
-            color: #ccc;
-            border: 1px solid #555;
-        }
-
-        .form-control:focus {
-            background-color: #555;
-            color: #ccc;
-            border: 1px solid #666;
-        }
-
-        .btn-primary {
-            background-color: #555;
-            border: none;
-        }
-
-        .btn-primary:hover {
-            background-color: #777;
+            color: #fff;
+            text-decoration: underline;
         }
 
         @media (min-width: 600px) {
@@ -300,7 +295,6 @@
                 margin: 10px;
             }
         }
-        
     </style>
 </head>
 <body>
@@ -317,110 +311,87 @@
     
     <p><small><center>jangan lupa geser ke bawah <b>↓</b> dan <b>refresh</b> takut ada update</center></small></p>
 
-    <section class="marketplace">
-        <div class="marketplace-items">
-            <div class="item">
-                <div class="item-content">
-                    <img src="img/lobby.png" alt="Banner" oncontextmenu="return false;">
-                    <div class="details">
-                        <p>build lobby servermu ayo! baguskan lobby mu bersama kami.</p>
-                        <div class="price">
-                            <ul class="social-links">
-                                <li><a href="#" data-toggle="modal" data-target="#orderModal" data-type="build lobby">pesan</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           <div class="item">
-                <div class="item-content">
-                    <img src="img/spawn.png" alt="Banner" oncontextmenu="return false;">
-                    <div class="details">
-                        <p>build arena spawn survival pvp mining dan sebagainya.</p>
-                        <div class="price">
-                            <ul class="social-links">
-                                <li><a href="#" data-toggle="modal" data-target="#orderModal" data-type="build arena">pesan</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <p><small><center><b>↓</b> sinih geser masih ada kalo gak keliatan di hp <b>↓</b></center></small></p>
-
     <section class="marinfo">
         <div class="iteminfo">
             <div class="infocontent">
-             <h2>apa itu builder build?.</h2>
-                <p>builder adalah jasa membuat sebuah arena/lobby/rumah di servermc anda sesuai kebutuhan.</p>
-                <h2>request model build?</h2>
-                <p>ya nanti anda request model tema dsb dan kami akan membuat pilihan desain nanti anda pilih.</p>
+              <img src="img/octo.jpg" alt="Banner" oncontextmenu="return false;">
+                <h2>Testimoni.</h2>
+                <p><small>PESANAN:</small> Lobby spawn survival servermc ukuran 20x20 + 5x5 tema octopus (gurita).</p>
+                <h2>Customer</h2>
+                <p><small>PEMBELI:</small> Owner server <small>OCTOPUS NETWORK</small>.</p>
+                <p><small>KOMENTAR:</small> Lain kali order lagi cihuy.</p>
+                <tanggal>Kamis/25/07/2024</tanggal>
             </div>
         </div>
         <div class="iteminfo">
             <div class="infocontent">
-                <h2>pengembang plixstore</h2>
-                <p>seseorang publiser dan developer <small>YOGAKS</small> bersama teman online nya <small>VIGI</small> dan dua orang builder profesional <small>KENZO</small> dan <small>RIFKI</small>.</p>
-                <h2>apa bnefit plixstore?</h2>
-                <p>setiap pesanan di proses oleh staff tidak oleh bot jadi lebih <small>INTRAKTIF</small>.</p>
+              <img src="img/setup.png" alt="Banner" oncontextmenu="return false;">
+                <h2>Testimoni.</h2>
+                <p><small>PESANAN:</small> Setup server minecraft pocketmine tema economy.</p>
+                <h2>Customer</h2>
+                <p><small>PEMBELI:</small> Owner server <small>SKYLANTERN</small>.</p>
+                <p><small>KOMENTAR:</small> Setup server ramah terpercaya sewa kemanan juga.</p>
+                <tanggal>Senin/03/06/2024</tanggal>
             </div>
         </div>
-    </section>
-    
-    <section class="marketplace">
-        <div class="marketplace-items">
-            <div class="item">
-                <div class="item-content">
-                    <img src="img/iklan.png" alt="Banner" oncontextmenu="return false;">
-                    <div class="price">
-                        <ul class="social-links">
-                            <li><a href="https://plixsmp.my.id/">menu utama</a></li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="iteminfo">
+            <div class="infocontent">
+              <img src="img/setup.png" alt="Banner" oncontextmenu="return false;">
+                <h2>Testimoni.</h2>
+                <p><small>PESANAN:</small> Setup simple fitur dan teskturepacks server.</p>
+                <h2>Customer</h2>
+                <p><small>PEMBELI:</small> Owner server <small>CILOKSMP</small>.</p>
+                <p><small>KOMENTAR:</small> Mau jadi dev? (me ndak malas).</p>
+                <tanggal>Sabtu/01/06/2024</tanggal>
             </div>
         </div>
-    </section>
+        </section>
+      <section class="marinfo">
+        <div class="iteminfo">
+            <div class="infocontent">
+              <img src="img/setup.png" alt="Banner" oncontextmenu="return false;">
+                <h2>Testimoni.</h2>
+                <p><small>PESANAN:</small> Setup server minecraft pocketmine tema economy.</p>
+                <h2>Customer</h2>
+                <p><small>PEMBELI:</small> Owner server <small>ITZLANZGO</small>.</p>
+                <p><small>KOMENTAR:</small> Admin baik hati walau w pay to win di servernya.</p>
+                <tanggal>Minggu/28/04/2024</tanggal>
+            </div>
+        </div>
+        <div class="iteminfo">
+            <div class="infocontent">
+              <img src="img/setup.png" alt="Banner" oncontextmenu="return false;">
+                <h2>Testimoni.</h2>
+                <p><small>PESANAN:</small> Setup server minecraft pocketmine tema economymix clans.</p>
+                <h2>Customer</h2>
+                <p><small>PEMBELI:</small> Owner server <small>SQUID NETWORK</small>.</p>
+                <p><small>KOMENTAR:</small> Buat server terbaik.</p>
+                <tanggal>Rabu/17/04/2024</tanggal>
+            </div>
+        </div>
+        <div class="iteminfo">
+            <div class="infocontent">
+              <img src="img/plixsmp.jpg" alt="Banner" oncontextmenu="return false;">
+                <h2>Testimoni.</h2>
+                <p><small>PESANAN:</small> All produck :v server setup pocketmine semua arena.</p>
+                <h2>Customer</h2>
+                <p><small>PEMBELI:</small> Owner server <small>PLIXSMP</small>.</p>
+                <p><small>KOMENTAR:</small> Kan PLIXSMP server kita staff dari PLIXSTORE :v.</p>
+                <tanggal>Rabu/27/03/2024</tanggal>
+            </div>
+        </div>
+        </section>
 
     <footer>
         <p><small><center>&copy; plixsmp. all rights reserved.</center></small></p>
     </footer>
-
-    <!-- Order Modal -->
-    <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="orderModalLabel">Pesan</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form id="orderForm">
-                        <div class="form-group">
-                            <label for="tema">Ukuran</label>
-            <input type="text" class="form-control" id="tema" placeholder="perlebar: 15x15block 15k." required>
-        </div>
-        <div class="form-group">
-            <label for="deskripsi">Tema atau model</label>
-            <input type="text" class="form-control" id="deskripsi" placeholder="contoh: warna hitam bentuk kotak." required>
-        </div>
-                        <button type="submit" class="btn btn-primary">pesan</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- Custom JS to hide loader and handle modal -->
+    <!-- Custom JS to hide loader -->
     <script>
         window.addEventListener('load', function () {
             setTimeout(function () {
@@ -428,22 +399,7 @@
             }, 1000); // Adjust this delay as needed
         });
 
-        $('#orderModal').on('show.bs.modal', function (event) {
-            var button = $(event.relatedTarget); // Button that triggered the modal
-            var type = button.data('type'); // Extract info from data-* attributes
-            var modal = $(this);
-            modal.find('.modal-title').text('Pesan ' + type);
-            
-            var form = document.getElementById('orderForm');
-            form.onsubmit = function(event) {
-                event.preventDefault();
-                var tema = document.getElementById('tema').value;
-                var deskripsi = document.getElementById('deskripsi').value;
-                var url = 'https://wa.me/6285778619952?text=Hello, saya ingin membeli ' + type + ' ukuran: ' + tema + ' tema: ' + deskripsi;
-                window.open(url, '_blank');
-                $('#orderModal').modal('hide');
-            };
-        });
+        // Disable text selection and context menu
         document.addEventListener('DOMContentLoaded', function () {
             document.body.addEventListener('copy', function (e) {
                 e.preventDefault();
