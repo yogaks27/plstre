@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLIXSTORE</title>
+    <meta http-equiv="refresh" content="60">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="description" content="website storemc PLIXSTORE, ayo kunjungi website kami!">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/icon.png" type="image/png">
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="PLIXSTORE">
+    <meta property="og:description" content="Halo kami plixstore menyediakan berbagai macam kebutuhan server dan minecraft anda berbagai build skin resource packs dan sebagainya.">
+    <meta property="og:image" content="https://plixsmp.my.id/img/icona.png">
+    <meta property="og:url" content="https://plixsmp.my.id">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="PLIXSTORE">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3B3B3B;
+    color: #fff;
+    background-image: repeating-linear-gradient(
+        to right,
+        #0000 0px,
+        #3B3B3B 19px,
+        #555555 20px
+    );
+    background-size: 20px 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.marketplace, .marinfo {
+    text-align: center;
+    padding: 10px;
+}
+
+.marketplace h2, .marinfo h2 {
+    margin: 0;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.marketplace-items, .staff-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item, .staff {
+    background-color: #333;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    box-sizing: border-box;
+    box-shadow: 
+        5px 5px 10px rgba(0, 0, 0, 0.3),
+        -5px -5px 10px rgba(0, 0, 0, 0.2),
+        10px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.item-content, .staff img {
+    align-items: center;
+    width: 100%;
+}
+
+.item-content h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.item img, .staff img {
+    width: 280px;
+    height: auto;
+    border-radius: 5px;
+    align-items: center;
+    margin-top: 1px;
+}
+
+.details, .staff {
+    text-align: center;
+}
+
+.details h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.details p, .iteminfo p, .staff h3 {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.infocontent {
+    margin-bottom: 0;
+}
+
+.infocontent h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.price {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+a {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 35px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:focus, a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.button-bubble {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 35px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button-bubble:hover {
+    background-color: #777;
+    transform: scale(1.05);
+}
+
+.button-bubble:focus {
+    outline: none;
+}
+
+.iteminfo {
+    background-color: #333;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+    text-align: left;
+    box-shadow: 
+        5px 5px 10px rgba(0, 0, 0, 0.3),
+        -5px -5px 10px rgba(0, 0, 0, 0.2),
+        10px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.infocontent img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0px;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #555;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    background-color: #777;
+}
+
+.price a {
+    display: inline-block;
+    padding: 10px 100px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #555;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.price a:hover {
+    background-color: #777;
+}
+
+.iteminfo small {
+    font-weight: bold;
+    color: white;
+}
+
+.iteminfo tanggal {
+    color: gray;
+    display: inline-block;
+    font-size: 10px;
+}
+
+/* Loader styles */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border-width: 0.4em;
+    border-radius: 50%;
+    border-top-color: #fff;
+}
+
+k {
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+    .marinfo {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .iteminfo {
+        width: 32%;
+        margin: 10px;
+    }
+}
+
+/* Additional styles for section.marinfo */
+section.marinfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.iteminfo {
+    width: 45%;
+    background-color: #333;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 
+        5px 5px 10px rgba(0, 0, 0, 0.3),
+        -5px -5px 10px rgba(0, 0, 0, 0.2),
+        10px 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.infocontent h2 {
+    font-size: 1.5em;
+    color: #eee;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fff8;
+    padding-bottom: 5px;
+}
+
+.infocontent p {
+    font-size: 1em;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.infocontent small {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.infocontent a {
+    display: inline-block;
+    text-decoration: none;
+    color: #eee;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.infocontent a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .iteminfo {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Loading overlay -->
+    <div class="loader" id="loader">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <section class="banner">
+        <img src="img/plixstore.png" alt="Banner" oncontextmenu="return false;">
+    </section>
+    
+    <p><small><center>jangan lupa geser ke bawah <b>↓</b> dan <b>refresh</b> takut ada update</center></small></p>
+
+    <section class="marketplace">
+        <div class="marketplace-items">
+            <div class="item">
+                <div class="item-content">
+                    <img src="img/desainn.png" alt="Banner" oncontextmenu="return false;">
+                    <div class="details">
+                        <p>Category desain grafis skinmc rspacks 3dmodel dan banner/thumbnail.</p>
+                        <div class="price">
+                            <ul class="social-links">
+                                <li><a href="https://plixsmp.my.id/desain">Lihat produk</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-content">
+                    <img src="img/buildd.png" alt="Banner" oncontextmenu="return false;">
+                    <div class="details">
+                        <p>Category produk builder mapmc server lobby arena dsb.</p>
+                        <div class="price">
+                            <ul class="social-links">
+                                <li><a href="https://plixsmp.my.id/builder">Lihat produk</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-content">
+                    <img src="img/setupp.png" alt="Banner" oncontextmenu="return false;">
+                    <div class="details">
+                        <p>Category setup server mc pocketmine/bedrock/paper.</p>
+                        <div class="price">
+                            <ul class="social-links">
+                                <li><a href="https://plixsmp.my.id/setup">Lihat produk</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <p><small><center><b>↓</b> sinih geser masih ada kalo gak keliatan di hp <b>↓</b></center></small></p>
+
+    <section class="marinfo">
+    <div class="iteminfo">
+        <div class="infocontent">
+            <h2>Tentang info plixstore.</h2>
+            <p>plixstore didirikan pada awal 2023 oleh <small>YOGAKS</small> dan kini dikembangkan oleh tim staff lainnya.</p>
+            <h2>Faquestion plixstore.</h2>
+            <p><strong>Apakah plixstore aman dan ramah?</strong> Tentu, staff kami selalu belajar untuk menjadi yang <small>TERBAIK</small>.</p>
+            <p><strong>Apa saja metode pembayarannya?</strong> Pembayaran bisa dilakukan menggunakan <small>QRIS</small> atau <small>GOPAY</small>.</p>
+            <h2>Lihat testimoni?</h2>
+            <p>Kamu bisa melihat testimoni dengan klik tautan berikut:</p>
+            <a href="https://plixsmp.my.id/testi">TESTIMONI</a>
+        </div>
+    </div>
+    <div class="iteminfo">
+        <div class="infocontent">
+            <h2>Pengembang plixstore.</h2>
+            <p>plixstore dikembangkan oleh <small>YOGAKS</small> bersama teman onlinenya <small>VIGI</small>, serta dua orang builder profesional <small>KENZO</small> dan <small>RIFKI</small>.</p>
+            <h2>Keuntungan plixstore.</h2>
+            <p>Setiap pesanan diproses oleh staff, bukan oleh bot, sehingga lebih <small>INTERAKTIF</small>.</p>
+            <p>Produk tidak akan di perjual belikan kembali dan kami akan membuat model dan tema yang anda inginkan sesuai.</p>
+            <h2>Mau bermain game?</h2>
+            <p>Kamu bisa bermain game dengan klik tautan berikut:</p>
+            <a href="https://plixsmp.my.id/game">PLIXGAMES</a>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <p><small><center>&copy; plixstore. all rights reserved.</center></small></p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS to hide loader -->
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                document.getElementById('loader').style.display = 'none';
+            }, 1000); // Adjust this delay as needed
+        });
+
+        // Disable text selection and context menu
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.addEventListener('copy', function (e) {
+                e.preventDefault();
+            });
+            
+            document.body.addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+            });
+
+            document.body.addEventListener('selectstart', function (e) {
+                e.preventDefault();
+            });
+        });
+    </script>
+</body>
+</html>
