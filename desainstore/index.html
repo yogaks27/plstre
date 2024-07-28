@@ -321,25 +321,38 @@
         <div class="marketplace-items">
             <div class="item">
                 <div class="item-content">
-                    <img src="img/lobby.png" alt="Banner" oncontextmenu="return false;">
+                    <img src="img/3ddes.png" alt="Banner" oncontextmenu="return false;">
                     <div class="details">
-                        <p>build lobby servermu ayo! baguskan lobby mu bersama kami.</p>
+                        <p>3d model adalah 3d model npc/block/furniture untuk server atau kebutuhan lainya.</p>
                         <div class="price">
                             <ul class="social-links">
-                                <li><a href="#" data-toggle="modal" data-target="#orderModal" data-type="build lobby">pesan</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#orderModal" data-type="desain 3dmodel">pesan</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-           <div class="item">
+            <div class="item">
                 <div class="item-content">
-                    <img src="img/spawn.png" alt="Banner" oncontextmenu="return false;">
+                    <img src="img/2ddes.png" alt="Banner" oncontextmenu="return false;">
                     <div class="details">
-                        <p>build arena spawn survival pvp mining dan sebagainya.</p>
+                        <p>model desain2d skinmc logomc thumbnail/banner untuk YouTube atau sebagainya.</p>
                         <div class="price">
                             <ul class="social-links">
-                                <li><a href="#" data-toggle="modal" data-target="#orderModal" data-type="build arena">pesan</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#orderModal" data-type="desain desain2d">pesan</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-content">
+                    <img src="img/rscpacks.png" alt="Banner" oncontextmenu="return false;">
+                    <div class="details">
+                        <p>resource packs anda bisa membuat rspacks untuk server seperti scorehud logo atau ranks tag dan juga untuk rsapacks lainya.</p>
+                        <div class="price">
+                            <ul class="social-links">
+                                <li><a href="#" data-toggle="modal" data-target="#orderModal" data-type="desain rscpacks">pesan</a></li>
                             </ul>
                         </div>
                     </div>
@@ -353,10 +366,10 @@
     <section class="marinfo">
         <div class="iteminfo">
             <div class="infocontent">
-             <h2>apa itu builder build?.</h2>
-                <p>builder adalah jasa membuat sebuah arena/lobby/rumah di servermc anda sesuai kebutuhan.</p>
-                <h2>request model build?</h2>
-                <p>ya nanti anda request model tema dsb dan kami akan membuat pilihan desain nanti anda pilih.</p>
+                <h2>apa itu desain?</h2>
+                <p>adalah desain grafis keperluan minecraft anda dan server juga anda dapat memperbagus server anda dengan desain.</p>
+                <h2>apakah sesuaikan model desain?</h2>
+                <p>ya nanti anda request model skin/3d/dsb dan kami akan membuat 3 pilihan desain nanti anda pilih.</p>
             </div>
         </div>
         <div class="iteminfo">
@@ -401,8 +414,8 @@
                 <div class="modal-body">
                     <form id="orderForm">
                         <div class="form-group">
-                            <label for="tema">Ukuran</label>
-            <input type="text" class="form-control" id="tema" placeholder="perlebar: 15x15block 15k." required>
+                            <label for="tema">Item atau produk</label>
+            <input type="text" class="form-control" id="tema" placeholder="ini isi nama item di desk produk." required>
         </div>
         <div class="form-group">
             <label for="deskripsi">Tema atau model</label>
@@ -439,12 +452,12 @@
                 event.preventDefault();
                 var tema = document.getElementById('tema').value;
                 var deskripsi = document.getElementById('deskripsi').value;
-                var url = 'https://wa.me/6285778619952?text=Hello, saya ingin membeli ' + type + ' ukuran: ' + tema + ' tema: ' + deskripsi;
+                var url = 'https://wa.me/6285778619952?text=Hello, saya ingin membeli ' + type + ' item: ' + tema + ' tema: ' + deskripsi;
                 window.open(url, '_blank');
                 $('#orderModal').modal('hide');
             };
         });
-        document.addEventListener('DOMContentLoaded', function () {
+                document.addEventListener('DOMContentLoaded', function () {
             document.body.addEventListener('copy', function (e) {
                 e.preventDefault();
             });
@@ -457,7 +470,7 @@
                 e.preventDefault();
             });
         });
-      // Daftarkan Service Worker
+    // Daftarkan Service Worker
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function () {
                 navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
