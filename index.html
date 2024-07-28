@@ -344,6 +344,9 @@ section.marinfo {
     </style>
 </head>
 <body>
+    <audio id="ygaksong" autoplay loop>
+        <source src="https://s01.babup.com/uploads/Sakura-Girl-Daisy.mp3" type="audio/mp3">
+    </audio>
     <!-- Loading overlay -->
     <div class="loader" id="loader">
         <div class="spinner-border" role="status">
@@ -470,6 +473,14 @@ section.marinfo {
                 });
             });
         }
+
+        // Ensure the audio plays automatically
+        window.addEventListener('load', function() {
+            let audio = document.getElementById('ygaksong');
+            audio.play().catch(function(error) {
+                console.error('Error attempting to play audio:', error);
+            });
+        });
     </script>
 </body>
 </html>
