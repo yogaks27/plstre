@@ -400,9 +400,6 @@ small {
             <span class="sr-only">Loading...</span>
         </div>
     </div>
-    <audio id="ygaksong" autoplay>
-    <source src="https://s01.babup.com/uploads/Sakura-Girl-Daisy.mp3" type="audio/mp3">
-    </audio>
     <section class="banner">
         <img src="img/plixstore.png" alt="Banner" oncontextmenu="return false;">
     </section>
@@ -509,6 +506,7 @@ small {
             </div>
         </div>
     </section>
+        <br><center><audio src="https://s01.babup.com/uploads/Evening-In-The-Tavern-lagu-dan-lirik-oleh-Pawel-Blaszczak-Spotify.mp3" controls></audio></center>
 
     <footer>
         <p><small><center>&copy; plixstore. all rights reserved.</center></small></p>
@@ -552,14 +550,6 @@ small {
                 });
             });
         }
-
-        // Ensure the audio plays automatically
-        window.addEventListener('load', function() {
-            let audio = document.getElementById('ygaksong');
-            audio.play().catch(function(error) {
-                console.error('Error attempting to play audio:', error);
-            });
-        });
     </script>
 </body>
 </html>
