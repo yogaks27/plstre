@@ -56,22 +56,25 @@
     content: '';
     position: absolute;
     top: 0;
-    left: -100%;
+    left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    opacity: 0; /* Mulai dengan opacity 0 */
     animation: shine 2s infinite;
 }
 
 @keyframes shine {
     0% {
-        left: -100%;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5; /* Maksimal cerah */
     }
     100% {
-        left: 100%;
+        opacity: 0;
     }
 }
-
 .marketplace, .marinfo {
     text-align: center;
     padding: 10px;
