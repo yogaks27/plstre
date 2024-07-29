@@ -339,16 +339,35 @@ section.marinfo {
 }
 
 .carousel-item img {
-    width: 80%; /* Make sure the image fills the container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Crop image to fit the container */
-    border-radius: 5px; /* Optional: add rounded corners */
-    background-color: #00000000;
-    color: #00000000;
-    box-shadow: 
-        5px 5px 10px rgba(0, 0, 0, 0.3),
-        -5px -5px 10px rgba(0, 0, 0, 0.2),
-        10px 10px 15px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Pastikan gambar mengisi lebar container */
+    height: auto; /* Pertahankan rasio aspek */
+    object-fit: cover; /* Potong gambar agar pas dengan container */
+    border-radius: 5px; /* Sudut melengkung opsional */
+    position: relative; /* Diperlukan untuk pseudo-element */
+    overflow: hidden; /* Memastikan pseudo-element terpotong sesuai batas gambar */
+}
+
+.carousel-item img::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.4) 75%);
+    transform: rotate(30deg);
+    animation: lightEffect 2s infinite;
+}
+
+@keyframes lightEffect {
+    0% {
+        top: -100%;
+        left: -100%;
+    }
+    100% {
+        top: 100%;
+        left: 100%;
+    }
 }
 
 .carousel-control-prev,
