@@ -30,3 +30,12 @@ if ('serviceWorker' in navigator) {
         });
     });
 }
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const elements = document.querySelectorAll('.no-copy');
+    elements.forEach(element => {
+        let originalText = element.textContent;
+        let scrambledText = originalText.split('').reverse().join('');
+        element.textContent = scrambledText;
+    });
+});
