@@ -46,214 +46,75 @@
             border-radius: 5px;
         }
 
-        .marketplace, .marinfo {
-            text-align: center;
-            padding: 5px;
-        }
-
-        .marketplace h2, .marinfo h2 {
-            margin: 0;
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .marketplace-items, .staff-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .item, .staff {
-            background-color: #333;
-            margin: 10px;
-            padding: 10px;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            width: 300px;
-            box-sizing: border-box;
-            box-shadow: 
-                5px 5px 10px rgba(0, 0, 0, 0.3),
-                -5px -5px 10px rgba(0, 0, 0, 0.2),
-                10px 10px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .item-content, .staff img {
-            align-items: center;
-            width: 100%;
-        }
-        
-        .item-content h3 {
-            margin: 0;
-            font-size: 20px;
-            color: #fff;
-            text-decoration: underline;
-        }
-
-        .item img, .staff img {
-            width: 280px;
-            height: auto;
-            height: auto;
-            border-radius: 5px;
-            align-items: center;
-            margin-top: 1px;
-        }
-
-        .details, .staff {
-            text-align: center;
-        }
-
-        .details h3 {
-            margin: 0;
+        .snip1533 {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+            color: #9e9e9e;
+            display: inline-block;
+            font-family: 'Roboto', Arial, sans-serif;
             font-size: 16px;
-            color: #fff;
-            text-decoration: underline;
+            margin: 35px 10px;
+            max-width: 310px;
+            min-width: 250px;
+            position: relative;
+            text-align: center;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 5px;
+            border-top: 5px solid #d2652d;
         }
 
-        .details p, .iteminfo p, .staff h3 {
-            margin: 5px 0;
-            font-size: 14px;
-            color: #ccc;
+        .snip1533 figcaption {
+            padding: 13% 10% 12%;
         }
 
-        .infocontent {
-            margin-bottom: 0;
+        .snip1533 figcaption:before {
+            transform: translateX(-50%);
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+            color: #d2652d;
+            content: "\f10e";
+            font-family: 'FontAwesome';
+            font-size: 32px;
+            font-style: normal;
+            left: 50%;
+            line-height: 60px;
+            position: absolute;
+            top: -30px;
+            width: 60px;
         }
 
-        .infocontent h2 {
-            margin: 0;
+        .snip1533 h3 {
+            color: #3c3c3c;
             font-size: 20px;
-            text-decoration: underline;
+            font-weight: 300;
+            line-height: 24px;
+            margin: 10px 0 5px;
         }
 
-        .price {
-            font-size: 14px;
-            margin-top: 10px;
-        }
-        
-         a {
-          background-color: #555;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            padding: 8px 35px;
-            font-size: 14px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s;
-            display: inline-block;
-            text-decoration: none;
-          font-weight: bold;
-        }
-        
-        a:focus, a:hover {
-          color: white;
-          font-weight: bold;
+        .snip1533 h4 {
+            font-weight: 400;
+            margin: 0;
+            opacity: 0.5;
         }
 
-        .button-bubble {
-            background-color: #555;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 35px;
-            font-size: 14px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s;
-            display: inline-block;
-            text-decoration: none;
+        .snip1533 blockquote {
+            font-style: italic;
+            font-weight: 300;
+            margin: 0 0 20px;
         }
 
-        .button-bubble:hover {
-            background-color: #777;
-            transform: scale(1.05);
+        .figure-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
-        .button-bubble:focus {
-            outline: none;
-        }
-
-        .iteminfo {
-    background-color: #333;
-    margin: 10px auto;
-    padding: 5px;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 700px;
-    box-sizing: border-box;
-    text-align: left;
-    box-shadow: 
-        5px 5px 10px rgba(0, 0, 0, 0.3),
-        -5px -5px 10px rgba(0, 0, 0, 0.2),
-        10px 10px 15px rgba(0, 0, 0, 0.1);
-}
-        
-        .infocontent img {
+        .snip1533 img {
             width: 100%;
             height: auto;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            border-bottom: 3px solid #fff8;
-            padding-bottom: 1px;
-}
-        }
-
-        .social-links {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .social-links li {
-            display: inline-block;
-            margin: 0px;
-        }
-
-        .social-links a {
-            display: inline-block;
-            padding: 10px 100%;
-            text-decoration: none;
-            color: #fff;
-            background-color: #555;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        .social-links a:hover {
-            background-color: #777;
-        }
-        
-        .price a {
-            display: inline-block;
-            padding: 10px 100px;
-            text-decoration: none;
-            color: #fff;
-            background-color: #555;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        .price a:hover {
-            background-color: #777;
-        }
-
-        .iteminfo small {
-            font-weight: bold;
-            color: white;
-        }
-        
-        .iteminfo tanggal {
-            color: gray;
-            display: inline-block;
-            font-size: 12px;
-            border-left: 5px dashed yellow;
-        }
-
-        p, small {
-            margin: 0px 0;
-        }
-
-        small {
-            font-size: 0.8em;
-            color: gray;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
         }
 
         /* Loader styles */
@@ -277,24 +138,6 @@
             border-radius: 50%;
             border-top-color: #fff;
         }
-        
-        k {
-            color: #fff;
-            text-decoration: underline;
-        }
-
-        @media (min-width: 600px) {
-            .marinfo {
-                display: flex;
-                justify-content: center;
-                align-items: flex-start;
-            }
-
-            .iteminfo {
-                width: 32%;
-                margin: 10px;
-            }
-        }
     </style>
 </head>
 <body>
@@ -306,81 +149,46 @@
     </div>
 
     <section class="banner">
-        <img src="img/plixstore.png" alt="Banner" oncontextmenu="return false;">
+        <img src="img/bnr.png" alt="Banner" oncontextmenu="return false;">
     </section>
     
     <p><small><center>jangan lupa geser ke bawah <b>↓</b> dan <b>refresh</b> takut ada update</center></small></p>
 
-    <section class="marinfo">
-        <div class="iteminfo">
-            <div class="infocontent">
-              <img src="img/octo.jpg" alt="Banner" oncontextmenu="return false;">
-                <h2>Testimoni.</h2>
-                <p><small>PESANAN:</small> Lobby spawn survival servermc ukuran 20x20 + 5x5 tema octopus (gurita).</p>
-                <h2>Customer</h2>
-                <p><small>PEMBELI:</small> Owner server <small>OCTOPUS NETWORK</small>.</p>
-                <p><small>KOMENTAR:</small> Lain kali order lagi cihuy.</p>
-                <tanggal>Kamis/25/07/2024</tanggal>
-            </div>
+    <center>
+        <div class="figure-container">
+            <figure class="snip1533">
+                <img src="img/octo.jpg" alt="Image 1">
+                <figcaption>
+                    <blockquote>
+                        <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
+                    </blockquote>
+                    <h3>Wisteria Ravenclaw</h3>
+                    <h4>Google Inc.</h4>
+                </figcaption>
+            </figure>
+            <figure class="snip1533">
+                <img src="img/plixsmp.jpg" alt="Image 2">
+                <figcaption>
+                    <blockquote>
+                        <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+                    </blockquote>
+                    <h3>Ursula Gurnmeister</h3>
+                    <h4>Facebook</h4>
+                </figcaption>
+            </figure>
+            <figure class="snip1533">
+                <img src="img/setup.png" alt="Image 3">
+                <figcaption>
+                    <blockquote>
+                        <p>The only skills I have the patience to learn are those that have no real application in life.</p>
+                    </blockquote>
+                    <h3>Ingredia Nutrisha</h3>
+                    <h4>Twitter</h4>
+                </figcaption>
+            </figure>
         </div>
-        <div class="iteminfo">
-            <div class="infocontent">
-              <img src="img/setup.png" alt="Banner" oncontextmenu="return false;">
-                <h2>Testimoni.</h2>
-                <p><small>PESANAN:</small> Setup server minecraft pocketmine tema economy.</p>
-                <h2>Customer</h2>
-                <p><small>PEMBELI:</small> Owner server <small>SKYLANTERN</small>.</p>
-                <p><small>KOMENTAR:</small> Setup server ramah terpercaya sewa kemanan juga.</p>
-                <tanggal>Senin/03/06/2024</tanggal>
-            </div>
-        </div>
-        <div class="iteminfo">
-            <div class="infocontent">
-              <img src="img/setup.png" alt="Banner" oncontextmenu="return false;">
-                <h2>Testimoni.</h2>
-                <p><small>PESANAN:</small> Setup simple fitur dan teskturepacks server.</p>
-                <h2>Customer</h2>
-                <p><small>PEMBELI:</small> Owner server <small>CILOKSMP</small>.</p>
-                <p><small>KOMENTAR:</small> Mau jadi dev? (me ndak malas).</p>
-                <tanggal>Sabtu/01/06/2024</tanggal>
-            </div>
-        </div>
-        </section>
-      <section class="marinfo">
-        <div class="iteminfo">
-            <div class="infocontent">
-              <img src="img/setup.png" alt="Banner" oncontextmenu="return false;">
-                <h2>Testimoni.</h2>
-                <p><small>PESANAN:</small> Setup server minecraft pocketmine tema economy.</p>
-                <h2>Customer</h2>
-                <p><small>PEMBELI:</small> Owner server <small>ITZLANZGO</small>.</p>
-                <p><small>KOMENTAR:</small> Admin baik hati walau w pay to win di servernya.</p>
-                <tanggal>Minggu/28/04/2024</tanggal>
-            </div>
-        </div>
-        <div class="iteminfo">
-            <div class="infocontent">
-              <img src="img/setup.png" alt="Banner" oncontextmenu="return false;">
-                <h2>Testimoni.</h2>
-                <p><small>PESANAN:</small> Setup server minecraft pocketmine tema economymix clans.</p>
-                <h2>Customer</h2>
-                <p><small>PEMBELI:</small> Owner server <small>SQUID NETWORK</small>.</p>
-                <p><small>KOMENTAR:</small> Buat server terbaik.</p>
-                <tanggal>Rabu/17/04/2024</tanggal>
-            </div>
-        </div>
-        <div class="iteminfo">
-            <div class="infocontent">
-              <img src="img/plixsmp.jpg" alt="Banner" oncontextmenu="return false;">
-                <h2>Testimoni.</h2>
-                <p><small>PESANAN:</small> All produck :v server setup pocketmine semua arena.</p>
-                <h2>Customer</h2>
-                <p><small>PEMBELI:</small> Owner server <small>PLIXSMP</small>.</p>
-                <p><small>KOMENTAR:</small> Kan PLIXSMP server kita staff dari PLIXSTORE :v.</p>
-                <tanggal>Rabu/27/03/2024</tanggal>
-            </div>
-        </div>
-        </section>
+    </center>
+
     <p><small><center>back ajah kalo mau ke halaman awal</center></small></p>
 
     <footer>
@@ -414,7 +222,8 @@
                 e.preventDefault();
             });
         });
-    // Daftarkan Service Worker
+
+        // Daftarkan Service Worker
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function () {
                 navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
