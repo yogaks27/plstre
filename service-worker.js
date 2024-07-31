@@ -8,9 +8,9 @@ const urlsToCache = [
   '/setupstore/',
   '/setupstore/index.html',
   '/setupstore/img/content.png',
-  '/builderstore/',
-  '/builderstore/index.html',
-  '/builderstore/img/content.png',
+  '/buildstore/',
+  '/buildstore/index.html',
+  '/buildstore/img/content.png',
   '/desainstore/',
   '/desainstore/index.html',
   '/desainstore/img/content.png'
