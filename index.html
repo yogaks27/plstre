@@ -401,25 +401,13 @@ small {
 }
 
 .floating-bubble img {
-    width: 60px;
+    width: 50px;
     height: auto;
 }
 
 .floating-bubble:hover {
     transform: scale(1.1);
     animation: press 0.3s forwards;
-}
-
-@keyframes press {
-    0% {
-        transform: scale(1.1);
-    }
-    50% {
-        transform: scale(0.9);
-    }
-    100% {
-        transform: scale(1.5);
-    }
 }
 
 @keyframes bounce {
@@ -567,14 +555,12 @@ small {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Pesan beneran kamu mau mencuri code saya? Kamu tidak menghargai. Boleh saja untuk belajar, tapi jangan mengcopy paste. -->
     <script>
-      // Custom JS to hide loader
 window.addEventListener('load', function () {
     setTimeout(function () {
         document.getElementById('loader').style.display = 'none';
-    }, 1000); // Adjust this delay as needed
+    }, 1000);
 });
 
-// Disable text selection and context menu
 document.addEventListener('DOMContentLoaded', function () {
     document.body.addEventListener('copy', function (e) {
         e.preventDefault();
@@ -589,7 +575,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Register Service Worker
+
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
         navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
