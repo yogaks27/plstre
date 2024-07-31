@@ -405,8 +405,9 @@ small {
 }
 
 .floating-bubble img {
-    width: 40px; /* Adjust as needed */
+    width: 40px;
     height: auto;
+    border-radius: 50%; /* Optional: makes the icon round */
 }
 
 .floating-bubble:hover {
