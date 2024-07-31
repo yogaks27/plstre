@@ -3,12 +3,17 @@ const urlsToCache = [
   '/',
   '/index.html',
   '/styles.css',
-  '/scripts.js,
+  '/scripts.js',
   '/img/content.png',
-  '/builderstore/'
-  '/testi/',
-  '/testi/index.html',
-  '/testi/img/content.png'
+  '/setupstore/',
+  '/setupstore/index.html',
+  '/setupstore/img/content.png',
+  '/builderstore/',
+  '/builderstore/index.html',
+  '/builderstore/img/content.png',
+  '/desainstore/',
+  '/desainstore/index.html',
+  '/desainstore/img/content.png'
 ];
 
 self.addEventListener('install', function(event) {
