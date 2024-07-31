@@ -2,9 +2,10 @@ const CACHE_NAME = 'my-site-cache-v1';
 const urlsToCache = [
   '/',
   '/index.html',
-  '/styles.css?v=1.0.1',
-  '/script.js?v=1.0.1',
+  '/styles.css',
+  '/scripts.js,
   '/img/content.png',
+  '/builderstore/'
   '/testi/',
   '/testi/index.html',
   '/testi/img/content.png'
