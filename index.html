@@ -390,9 +390,7 @@ small {
 .floating-bubble {
     position: fixed;
     bottom: 20px;
-    right: 20px;
-    background-color: #00000080;
-    border-radius: 50%; /* Ensures the bubble is round */
+    right: 20px; /* Ensures the bubble is round */
     width: 60px;
     height: 60px;
     display: flex;
@@ -405,12 +403,11 @@ small {
 
 .floating-bubble img {
     width: 40px;
-    height: auto;
-    border-radius: 50%; /* Optional: makes the icon round */
+    height: auto; /* Optional: makes the icon round */
 }
 
 .floating-bubble:hover {
-    background-color: #00000080;
+    background-color: #RRGGBBAA;
     transform: scale(1.1);
 }
     </style>
