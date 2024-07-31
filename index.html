@@ -388,8 +388,8 @@ small {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -397,10 +397,11 @@ small {
     border-radius: 50%;
     z-index: 1000;
     transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    animation: bounce 1s infinite;
 }
 
 .floating-bubble img {
-    width: 40px;
+    width: 60px;
     height: auto;
 }
 
@@ -417,10 +418,21 @@ small {
         transform: scale(0.9);
     }
     100% {
-        transform: scale(1.1);
+        transform: scale(1.5);
     }
 }
 
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 </style>
 </head>
 <body>
