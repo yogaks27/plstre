@@ -387,3 +387,34 @@ small {
         margin: 10px 0;
     }
 }
+
+.floating-bubble {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #555;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.floating-bubble a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    padding: 10px;
+}
+
+.floating-bubble:hover {
+    background-color: #777;
+    transform: scale(1.1);
+}
