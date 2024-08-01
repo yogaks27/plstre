@@ -1,19 +1,11 @@
-**YGAKS27.**
+<h3 align="center">
+  PLIXSTORE
+</h3>
 
-Owner from store `plixstore`.
+<p align="center">
+	<a href="https://plixsmp.my.id">
+    <img alt="https://plixsmp.my.id" src="https://img.shields.io/badge/PLIXSTORE-website-badge%26logo%3Dgitbook%26color%3DB5E8E0%26logoColor%3DD9E0EE%26labelColor%3D302D41"></a>
 
-> I only use an Android to create projects, servers and websites.
-
-My simple website.
-[`website`](https://plixsmp.my.id/)
-
->
-> Owner **YGAKS27** with friends online **VXPLOIT** Co owner.
->
-> Builder two professional builders **KENZO9192** and **PAKRIFKI**.
->
-
-**Don't take our SC as you please**
-> I thank those of you who support and are kind to me.
-
-`©PLIXSMP` `@YGAKS27`
+<p align="center">
+simple code html css js store plixstore Minecraft server and content creator needs<br>
+</p><br>
