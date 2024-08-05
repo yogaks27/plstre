@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLIXSTORE</title>
     <meta http-equiv="refresh" content="60">
+    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <meta name="description" content="website kami plixstore menyediakan berbagai macam kebutuhan server dan minecraft anda berbagai build skin resource packs dan sebagainya.">
+    <meta name="description" content="website storemc PLIXSTORE, ayo kunjungi website kami!">
+    
+    <!-- Favicon -->
     <link rel="icon" href="img/icon.png" type="image/png">
-    <!-- Pesan beneran kamu mau mencuri code saya? Kamu tidak menghargai. Boleh saja untuk belajar, tapi jangan mengcopy paste lalu menggunakan nya tanpa izin. -->
+
+    <!-- Open Graph meta tags -->
     <meta property="og:title" content="PLIXSTORE">
     <meta property="og:description" content="Halo kami plixstore menyediakan berbagai macam kebutuhan server dan minecraft anda berbagai build skin resource packs dan sebagainya.">
-    <meta property="og:image" content="https://plixsmp.my.id/img/logo.png">
     <meta property="og:url" content="https://plixsmp.my.id">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="PLIXSTORE">
     <style>
-      body {
+        body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -125,6 +128,25 @@
     margin-top: 10px;
 }
 
+a {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 35px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:focus, a:hover {
+    color: white;
+    font-weight: bold;
+}
+
 .button-bubble {
     background-color: #555;
     color: #fff;
@@ -218,6 +240,7 @@
     font-size: 10px;
 }
 
+/* Loader styles */
 .loader {
     position: fixed;
     top: 0;
@@ -257,6 +280,7 @@ k {
     }
 }
 
+/* Additional styles for section.marinfo */
 section.marinfo {
     display: flex;
     flex-wrap: wrap;
@@ -300,8 +324,8 @@ section.marinfo {
 .ad-banner {
     position: relative;
     width: 90%;
-    max-width: 600px;
-    margin: auto;
+    max-width: 600px; /* Set maximum width for the carousel */
+    margin: auto; /* Center the carousel */
     background-color: #RRGGBBAA;
     box-shadow: 
         5px 5px 10px rgba(0, 0, 0, 0.3),
@@ -377,6 +401,7 @@ small {
     text-decoration: underline;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .iteminfo {
         width: 100%;
@@ -384,54 +409,47 @@ small {
     }
 }
 
-.floating-bubble {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 70px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    border-radius: 50%;
-    z-index: 1000;
-    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
-    animation: bounce 1s infinite;
-}
+.modal-content {
+            background-color: #333;
+            color: #ccc;
+            border: none;
+        }
 
-.floating-bubble img {
-    width: 50px;
-    height: auto;
-}
+        .modal-header {
+            border-bottom: 1px solid #444;
+        }
 
-.floating-bubble:hover {
-    transform: none;
-}
-@keyframes bounce {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-15px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-</style>
+        .modal-footer {
+            border-top: 1px solid #444;
+        }
+
+        .form-control {
+            background-color: #444;
+            color: #ccc;
+            border: 1px solid #555;
+        }
+
+        .form-control:focus {
+            background-color: #555;
+            color: #ccc;
+            border: 1px solid #666;
+        }
+
+        .btn-primary {
+            background-color: #555;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #777;
+        }
+    </style>
 </head>
 <body>
-    <div class="loader" id="loader">
-        <div class="spinner-border" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-
     <section class="banner">
         <img src="img/bnr.png" alt="Banner" oncontextmenu="return false;">
     </section>
-
+    
     <section class="ad-banner">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -460,64 +478,54 @@ small {
             </a>
         </div>
     </section>
-
-    <div class="floating-bubble">
-    <a href="https://plixsmp.my.id/testi" target="_blank">
-        <img src="img/testi.png" alt="Testimoni Icon">
-    </a>
-    </div>
-
+    
     <p><small><center>jangan lupa geser ke bawah <b>↓</b> dan <b>refresh</b> takut ada update</center></small></p>
 
     <section class="marketplace">
-        <div class="marketplace-items">
-            <div class="item">
-                <div class="item-content">
-                    <img src="img/DESAIN.png" alt="Banner" oncontextmenu="return false;">
-                    <div class="details">
-                        <p>Category desain grafis skinmc rspacks 3dmodel dan banner/thumbnail.</p>
-                        <div class="price">
-                            <ul class="social-links">
-                                <li><a href="https://plixsmp.my.id/desainstore">Lihat produk</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-content">
-                    <img src="img/BUILDER.png" alt="Banner" oncontextmenu="return false;">
-                    <div class="details">
-                        <p>Category produk builder mapmc server lobby arena dsb.</p>
-                        <div class="price">
-                            <ul class="social-links">
-                                <li><a href="https://plixsmp.my.id/buildstore">Lihat produk</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-content">
-                    <img src="img/SETUP.png" alt="Banner" oncontextmenu="return false;">
-                    <div class="details">
-                        <p>Category setup server mc pocketmine/bedrock/paper dan juga ada setup bot wa/dc.</p>
-                        <div class="price">
-                            <ul class="social-links">
-                                <li><a href="https://plixsmp.my.id/setupstore">Lihat produk</a></li>
-                            </ul>
-                        </div>
+    <div class="marketplace-items">
+        <div class="item">
+            <div class="item-content">
+                <img src="img/builds.png" alt="Build" oncontextmenu="return false;">
+                <div class="details">
+                    <p>Category produk builder mapmc server lobby arena pvp mining dsb.</p>
+                    <div class="price">
+                        <ul class="social-links">
+                            <li><a href="#" data-toggle="modal" data-target="#BuildModal" data-type="build">pesan</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="item">
+            <div class="item-content">
+                <img src="img/desains.png" alt="desain" oncontextmenu="return false;">
+                <div class="details">
+                    <p>Category desain grafis skinmc rspacks 3dmodel/2ddesain dan banner/thumbnail.</p>
+                    <div class="price">
+                        <ul class="social-links">
+                            <li><a href="#" data-toggle="modal" data-target="#DesainModal" data-type="desain">pesan</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-content">
+                <img src="img/setups.png" alt="setup" oncontextmenu="return false;">
+                <div class="details">
+                    <p>Category setup server mc pocketmine/bedrock/paper dan juga ada setup bot wa/dc.</p>
+                    <div class="price">
+                        <ul class="social-links">
+                            <li><a href="#" data-toggle="modal" data-target="#SetupModal" data-type="setup">pesan</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- Pesan beneran kamu mau mencuri code saya? Kamu tidak menghargai. Boleh saja untuk belajar, tapi jangan mengcopy paste. -->
-
-    <p><small><center><b>↓</b> sinih geser masih ada kalo gak keliatan di hp <b>↓</b></center></small></p>
-
-    <section class="marinfo">
+<section class="marinfo">
         <div class="iteminfo">
             <div class="infocontent">
                 <h2>Tentang info plixstore.</h2>
@@ -541,58 +549,202 @@ small {
         </div>
     </section>
 
-    <!-- Pesan beneran kamu mau mencuri code saya? Kamu tidak menghargai. Boleh saja untuk belajar, tapi jangan mengcopy paste. -->
+<footer>
+    <p><small><center>&copy; plixstore. all rights reserved.</center></small></p>
+</footer>
 
-    <footer>
-        <p><small><center>&copy; plixstore. all rights reserved.</center></small></p>
-    </footer>
+<!-- Build Modal -->
+<div class="modal fade" id="BuildModal" tabindex="-1" role="dialog" aria-labelledby="BuildModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="BuildModalLabel">Pesan Build</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="buildForm">
+                    <div class="form-group">
+                        <label for="produkBuild">pilih produk</label>
+                        <select class="form-control" id="produkBuild" required>
+                            <option value="">pilih produk</option>
+                            <option value
+                            ="Lobby utama">Lobby utama</option>
+                            <option value="Lobby survival/arena">Lobby arena (survival/dsb)</option>
+                            <option value="biru">Arena pvp/mining/dsb</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="temaBuild">Ukuran</label>
+                        <input type="text" class="form-control" id="temaBuild" placeholder="perlebar: 15x15block 20k." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="deskripsiBuild">Tema atau model</label>
+                        <input type="text" class="form-control" id="deskripsiBuild" placeholder="contoh: warna hitam bentuk kotak." required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Pesan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <!-- Pesan beneran kamu mau mencuri code saya? Kamu tidak menghargai. Boleh saja untuk belajar, tapi jangan mengcopy paste. -->
+<!-- Desain Modal -->
+<div class="modal fade" id="DesainModal" tabindex="-1" role="dialog" aria-labelledby="DesainModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="DesainModalLabel">Pesan Desain</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="desainForm">
+                    <div class="form-group">
+                        <label for="produkDesain">pilih produk</label>
+                        <select class="form-control" id="produkDesain" required>
+                            <option value="">pilih produk</option>
+                            <option value="hitam">Tag ranks</option>
+                            <option value="putih">Logomc/titlemc</option>
+                            <option value="putih">3dmodelmc npc/block</option>
+                            <option value="biru">thumbnail/banner</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="temaDesain">Tema dan model</label>
+                        <input type="text" class="form-control" id="temaDesain" placeholder="contoh: halowen dsb." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="deskripsiDesain">Deskripsi</label>
+                        <input type="text" class="form-control" id="deskripsiDesain" placeholder="contoh: jacket/octopus/air." required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Pesan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Setup Modal -->
+<div class="modal fade" id="SetupModal" tabindex="-1" role="dialog" aria-labelledby="SetupModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="SetupModalLabel">Pesan Setup</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="setupForm">
+                    <div class="form-group">
+                        <label for="produkSetup">pilih produk</label>
+                        <select class="form-control" id="produkSetup" required>
+                            <option value="">pilih produk</option>
+                            <option value="hijau">bot wa/dc</option></option>
+                            <option value="merah">pocketmine eco (bedrock only)</option>
+                            <option value="kuning">paper eco (java/bedrock)</option>
+                            <option value="hijau">pocketmine lifesteal (bedrock only)</option>
+                            <option value="hijau">paper lifesteal (java/bedrock)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="deskripsiSetup">deskripsi</label>
+                        <input type="text" class="form-control" id="deskripsiSetup" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Pesan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Pesan beneran kamu mau mencuri code saya? Kamu tidak menghargai. Boleh saja untuk belajar, tapi jangan mengcopy paste. -->
+
+    <!-- Custom JS to handle modal -->
     <script>
-window.addEventListener('load', function () {
-    setTimeout(function () {
-        document.getElementById('loader').style.display = 'none';
-    }, 1000);
-});
+    $('#BuildModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget); // Button that triggered the modal
+        var type = button.data('type'); // Extract info from data-* attributes
+        var modal = $(this);
+        modal.find('.modal-title').text('Pesan ' + type);
 
-document.addEventListener('DOMContentLoaded', function () {
-    document.body.addEventListener('copy', function (e) {
-        e.preventDefault();
+        var form = document.getElementById('buildForm');
+        form.onsubmit = function(event) {
+            event.preventDefault();
+            var produk = document.getElementById('produkBuild').value;
+            var tema = document.getElementById('temaBuild').value;
+            var deskripsi = document.getElementById('deskripsiBuild').value;
+            var url = 'https://wa.me/6285778619952?text=Hello, saya ingin membeli ' + type + ' produk: ' + produk + ' ukuran: ' + tema + ' tema: ' + deskripsi;
+            window.open(url, '_blank');
+            $('#BuildModal').modal('hide');
+        };
     });
 
-    document.body.addEventListener('contextmenu', function (e) {
-        e.preventDefault();
+    $('#DesainModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget); // Button that triggered the modal
+        var type = button.data('type'); // Extract info from data-* attributes
+        var modal = $(this);
+        modal.find('.modal-title').text('Pesan ' + type);
+
+        var form = document.getElementById('desainForm');
+        form.onsubmit = function(event) {
+            event.preventDefault();
+            var produk = document.getElementById('produkDesain').value;
+            var tema = document.getElementById('temaDesain').value;
+            var deskripsi = document.getElementById('deskripsiDesain').value;
+            var url = 'https://wa.me/6285778619952?text=Hello, saya ingin membeli ' + type + ' produk: ' + produk + ' ukuran: ' + tema + ' tema: ' + deskripsi;
+            window.open(url, '_blank');
+            $('#DesainModal').modal('hide');
+        };
     });
 
-    document.body.addEventListener('selectstart', function (e) {
-        e.preventDefault();
+    $('#SetupModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget); // Button that triggered the modal
+        var type = button.data('type'); // Extract info from data-* attributes
+        var modal = $(this);
+        modal.find('.modal-title').text('Pesan ' + type);
+
+        var form = document.getElementById('setupForm');
+        form.onsubmit = function(event) {
+            event.preventDefault();
+            var produk = document.getElementById('produkSetup').value;
+            var tema = document.getElementById('temaSetup').value;
+            var deskripsi = document.getElementById('deskripsiSetup').value;
+            var url = 'https://wa.me/6285778619952?text=Hello, saya ingin membeli ' + type + ' produk: ' + produk + ' desk: ' + deskripsi;
+            window.open(url, '_blank');
+            $('#SetupModal').modal('hide');
+        };
     });
-});
 
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.addEventListener('copy', function (e) {
+                e.preventDefault();
+            });
 
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function () {
-        navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }, function (error) {
-            console.log('ServiceWorker registration failed: ', error);
+            document.body.addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+            });
+
+            document.body.addEventListener('selectstart', function (e) {
+                e.preventDefault();
+            });
         });
-    });
-}
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    const elements = document.querySelectorAll('.no-copy');
-    elements.forEach(element => {
-        let originalText = element.textContent;
-        let scrambledText = originalText.split('').reverse().join('');
-        element.textContent = scrambledText;
-    });
-});
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (error) {
+                    console.log('ServiceWorker registration failed: ', error);
+                });
+            });
+        }
     </script>
 </body>
 </html>
-<!-- Pesan beneran kamu mau mencuri code saya? Kamu tidak menghargai. Boleh saja untuk belajar, tapi jangan mengcopy paste. -->
